@@ -12,7 +12,7 @@ const Fetchdata = () => {
         "https://api.thecatapi.com/v1/images/search?limit=10"
       );
 
-      const data = response.data;
+      const data = await response.data;
 
       setData(data);
     };
